@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import ListaHeroes from '../views/ListaHeroes.vue'
 
 Vue.use(VueRouter)
 
@@ -8,10 +8,25 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: ListaHeroes
   },
   {
-    path: '/about',
+    path: '/dc',
+    name: 'Home',
+    component: () => import('../views/ListaHeroes.vue')
+  },
+  {
+    path: '/marvel',
+    name: 'Home',
+    component: () => import('../views/ListaHeroes.vue')
+  },
+  {
+    path: '/buscar/:parametro',
+    name: 'Home',
+    component: () => import('../views/ListaHeroes.vue')
+  },
+  {
+    path: '/detalle/:id',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
