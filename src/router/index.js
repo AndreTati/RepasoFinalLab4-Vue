@@ -11,7 +11,17 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
+    path: '/legajo/:parametro',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/nombre/:parametro',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/detalle/:id',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
