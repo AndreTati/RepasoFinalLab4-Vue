@@ -1,15 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <menu-de-opciones></menu-de-opciones>
     <router-view/>
   </div>
 </template>
-
+<script>
+import MenuDeOpciones from './components/MenuDeOpciones.vue'
+export default {
+  components:{
+    "menu-de-opciones":MenuDeOpciones
+  }
+}
+</script>
 <style>
-#app {
+#a
+    MenuDeOpcionespp {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
